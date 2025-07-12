@@ -147,7 +147,7 @@ as far as the Loading ETL step and the final analysis, make sure you have the fo
 ## 1- ETL pipeline : 
 ### a) Extraction :
 
-the very first step is to prepare the <b>tweetsPOOLs.csv</b> file as in https://github.com/MohamedHmini/tweetsOLAPing/blob/master/extraction/archivedTweetsCrawler/tweetsPOOLs.csv.
+the very first step is to prepare the <b>tweetsPOOLs.csv</b> file as in https://github.com/Dikshav07/Finance-analytical-Platform-PowerBI-/blob/master/extraction/archivedTweetsCrawler/tweetsPOOLs.csv
 
 then we shall execute the <b>Scrapy Spider</b> to crawl the archive needed website pages as follows : 
 
