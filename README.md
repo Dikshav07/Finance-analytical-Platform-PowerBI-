@@ -1,7 +1,6 @@
 # tweetsOLAPing : an end-to-end social-media data-warehousing project :
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
 i'll walk you through an execution example using light-weight (very) data to show you the results.
 
