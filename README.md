@@ -155,14 +155,14 @@ then we shall execute the <b>Scrapy Spider</b> to crawl the archive needed websi
   cd extraction/archivedTweetsCrawler
   scrapy crawl -o tweetsSTREAMs.csv tweets
 ```
-after that you will get a file like the one in here : https://github.com/MohamedHmini/tweetsOLAPing/blob/master/sample-data/tweetsSTREAMs.csv
+after that you will get a file like the one in here : https://github.com/Dikshav07/Finance-analytical-Platform-PowerBI-/blob/master/sample-data/tweetsSTREAMs.csv
 
 the next step is to structure that CSV file into a tree like structure composed of directories and files :
 ```shell
   cd extraction/
   python tweetsPOOLsParser.py tweetsSTREAMs.csv ../root_urls/
 ```
-the output will be somewhat like this (light-weight) example : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/sample-data/urls_root
+the output will be somewhat like this (light-weight) example : https://github.com/Dikshav07/Finance-analytical-Platform-PowerBI-/tree/master/sample-data/urls_root
 
 next we have to perform a random selection to select only some URLs and not all, note that each URL will bring you up to 5000 tweets :
 
@@ -171,7 +171,7 @@ next we have to perform a random selection to select only some URLs and not all,
   python urlsRandomSelector.py ../root_urls/ ../chosen_urls.txt 700
 ```
 
-again check this link for an output example : https://github.com/MohamedHmini/tweetsOLAPing/blob/master/sample-data/chosen_urls.txt
+again check this link for an output example : https://github.com/Dikshav07/Finance-analytical-Platform-PowerBI-/blob/master/sample-data/chosen_urls.txt
 
 now after that we have all the needed URLs in a single file we can start downloading :
 
@@ -180,11 +180,11 @@ now after that we have all the needed URLs in a single file we can start downloa
   python tweetsDownloader.py ../chosen_urls.txt ../downloaded_pools/ ../download_error.txt
 ```
 
-again check this link for an output example : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/sample-data/downloaded-pools
+again check this link for an output example : https://github.com/Dikshav07/Finance-analytical-Platform-PowerBI-/tree/master/sample-data/downloaded-pools
 
 after we downloaded the files you will notice that they are compressed with a .bz2 file extension thus you have to decompress them somehow, i won't provide a solution in this stage.
 
-again check this link for an output example : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/sample-data/decompressed-pools
+again check this link for an output example : https://github.com/Dikshav07/Finance-analytical-Platform-PowerBI-/tree/master/sample-data/decompressed-pools
 
 note that i provide a script to lookup tweets from the twitterAPI directly using the downloaded tweets IDs, cause the tweets have been pulled in the stream by the collected you will find that most of them has zero metrics, i solve this solution using a context-aware random generator.
 
@@ -205,7 +205,7 @@ the second part consists of performing NLP analysis on the tweets to generate th
   python performNLPanalysis.py ../decompressed_pools/ ../tweets_sentiments.csv ../sent-err.txt
 ```
 
-again check this link for an output example : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/sample-data/processed
+again check this link for an output example : https://github.com/Dikshav07/Finance-analytical-Platform-PowerBI-/tree/master/sample-data/processed
 
 ### c) Loading :
 
@@ -216,11 +216,11 @@ before starting the SSIS process you have to provide a normalized data in the ri
   python dataNormalization.py ../twittos.csv ../tweets.csv ../data/normalized
 ```
 
-again check this link for an output example : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/sample-data/normalized-data
+again check this link for an output example : https://github.com/Dikshav07/Finance-analytical-Platform-PowerBI-/tree/master/sample-data/normalized-data
 
 for SSIS logic i provide the full model : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/loading/tweetsOLAPing_loading
 
-as well as the SSAS logic is fully provided : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/analysis/tweetsOLAPing_analysis
+as well as the SSAS logic is fully provided : https://github.com/Dikshav07/Finance-analytical-Platform-PowerBI-/tree/master/loading/tweetsOLAPing_loading
 
 #### SSIS modeling : 
 
@@ -310,7 +310,7 @@ FROM
 
 ### powerBI report :
 
-the final report is provided in : https://github.com/MohamedHmini/tweetsOLAPing/tree/master/analysis/powerBI
+the final report is provided in : https://github.com/Dikshav07/Finance-analytical-Platform-PowerBI-/tree/master/analysis/powerBI
 
 here are some examples :
 
@@ -330,5 +330,3 @@ here are some examples :
 [3] Nafees Ur Rehman, Svetlana Mansmann, Andreas Weiler, Marc H. Scholl. Building a DataWarehouse for Twitter Stream Exploration. IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining, Istanbul, turkey, August 2012.
 
 
-
-<b> MOHAMED-HMINI 2020</b>
