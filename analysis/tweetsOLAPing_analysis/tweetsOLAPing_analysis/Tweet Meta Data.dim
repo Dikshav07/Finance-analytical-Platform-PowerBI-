@@ -1,0 +1,375 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c2e4eb40-2015-481c-a746-64eb477dba3e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Tweet Meta Data</ID>
+  <Name>Tweet Meta Data</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3379" scrolltop="-8004" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10583" y="21008" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tweet_MetaData" left="20" top="-7858" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3784" height="8413" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000c80e0000dd200000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Tweet_MetaData" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3379</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8004</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-7858</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d3906d48-2cbd-468d-826f-1fe7ce5950b6">
+    <DataSourceViewID>TweetsOLAPing_view</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="93635d8b-033c-4f8b-b3e5-3f96ce08bbb2">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0888753e-fb98-4e65-8279-3618f42445d9">
+      <ID>Twmd Id</ID>
+      <Name>Twmd Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="25dbda79-bf4f-409c-80b2-7b8f71db7a8e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85501c05-e576-462f-9aa6-19f5e0777f2d">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>twmd_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d9bab502-481a-48d4-a90d-d8b251887b2f">
+          <AttributeID>Twmd Key</AttributeID>
+          <Name>Twmd Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="65c49a3a-d1a7-4ac1-b39b-3a1868ffb32f">
+          <AttributeID>Tweet Type</AttributeID>
+          <Name>Tweet Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="286a78db-897b-4b76-a1f4-720ed7709052">
+          <AttributeID>Is Quote</AttributeID>
+          <Name>Is Quote</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="22a576fc-267f-44d3-90c8-f76d737af815">
+          <AttributeID>Lang</AttributeID>
+          <Name>Lang</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="92544d14-5aaa-419d-b559-e03920e09733">
+          <AttributeID>Source</AttributeID>
+          <Name>Source</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="de9dae22-6eb2-4ce0-9567-0405fa39ae66">
+          <AttributeID>Media Type</AttributeID>
+          <Name>Media Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bfa9f0e3-225e-42cd-94c1-4a0298434980">
+          <AttributeID>Is Truncated</AttributeID>
+          <Name>Is Truncated</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d803b589-0e47-4a3e-85d7-bedd6243b0a4">
+          <AttributeID>Is Possibly Sensitive</AttributeID>
+          <Name>Is Possibly Sensitive</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2d629b24-0798-4cc2-9ed1-4702b34ebe01">
+          <AttributeID>Has Hashtags</AttributeID>
+          <Name>Has Hashtags</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a7dfdd8e-5228-4c69-b45c-7419a22a285f">
+          <AttributeID>Has Urls</AttributeID>
+          <Name>Has Urls</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cae57668-cf0c-402a-bc9e-f3a24fe87039">
+          <AttributeID>Has User Mentions</AttributeID>
+          <Name>Has User Mentions</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dd290823-b32c-43ce-9051-19379b7fa877">
+          <AttributeID>Has Symbols</AttributeID>
+          <Name>Has Symbols</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="698b09d6-4578-49ec-862a-8ba760c61711">
+          <AttributeID>Sentiment Tag</AttributeID>
+          <Name>Sentiment Tag</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="87004687-6aa8-4691-8fe4-efad2c9435ea">
+          <AttributeID>Content Type</AttributeID>
+          <Name>Content Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="088f69da-4358-44a8-91b0-1f8f76cc9ad6">
+      <ID>Twmd Key</ID>
+      <Name>Twmd Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="18c49acf-5dfb-4011-91c2-98f15e7bd5b4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c28d0607-9635-41d6-836d-4362b1ba419a">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>twmd_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="89134ce6-352f-4323-8e34-3f9bf0b0ab46">
+      <ID>Tweet Type</ID>
+      <Name>Tweet Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba4126e7-2680-4c7e-8cb6-3902a3a2af89">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="50cd6c2e-0bb7-4e32-bc04-483871ecdc62">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>tweet_type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="25c25c37-a2df-4a1c-a6c9-974e6711a0fb">
+      <ID>Is Quote</ID>
+      <Name>Is Quote</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cef92504-0693-4268-b81c-1c91c905b26b">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43911e55-2948-4360-b4d1-2a1a7904ae3a">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>is_quote</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1f7c8112-f434-4203-81e4-a9bc2a609b7e">
+      <ID>Lang</ID>
+      <Name>Lang</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6e98a93c-767a-4185-a2af-ea6df274d139">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba00ac15-0c6b-498c-b320-4a997917bbc6">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>lang</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2e7169d5-2086-4d73-bbca-9c10821585e2">
+      <ID>Source</ID>
+      <Name>Source</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="18598b47-f3dc-449a-901e-b4298d65937f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ddf6e583-51aa-41ec-960d-753ac3be7821">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>source</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="722d53d3-b629-4b5d-9f67-3af25273824d">
+      <ID>Media Type</ID>
+      <Name>Media Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="56a20706-6f15-4ee8-ae89-060971b07107">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1f880e4-75be-43f4-8325-934082b01e3a">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>media_type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8f7be44f-e41b-4c03-93de-e2c35cc99b88">
+      <ID>Is Truncated</ID>
+      <Name>Is Truncated</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9ef31a29-3d78-4425-8879-3cd362f3fde1">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b6dc21ca-f1c7-441a-8991-c1f90adebdd0">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>is_truncated</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b1ee2633-31a9-475f-9ed9-31fe75b4e9a0">
+      <ID>Is Possibly Sensitive</ID>
+      <Name>Is Possibly Sensitive</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cb29d946-206e-40be-93fc-d55d2ee21962">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cf151d62-80e7-4798-9016-87b8235f201c">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>is_possibly_sensitive</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2edad7dd-9fcc-470b-88d8-40959af84d90">
+      <ID>Has Hashtags</ID>
+      <Name>Has Hashtags</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1dfbf2b0-ce99-427a-ad8f-e69dff2cbc84">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db823da1-54bf-4774-94b3-5fc373856c4d">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>has_hashtags</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9ab97c26-05ae-4df6-bc57-b76eefaf5757">
+      <ID>Has Urls</ID>
+      <Name>Has Urls</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a77d98a-d11c-4867-be3e-49c1971861d2">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af035ad1-a059-418e-af64-7c0c3abba046">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>has_urls</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="37b40679-c4c2-4a3c-8a82-a98ffa005cf2">
+      <ID>Has User Mentions</ID>
+      <Name>Has User Mentions</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ebd77b7c-73a8-4c2a-a852-cf635fde5891">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64158f07-b314-4f0c-ae38-6c3ecd0b3baf">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>has_user_mentions</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="62384f96-0827-40fd-9264-c4755f46f815">
+      <ID>Has Symbols</ID>
+      <Name>Has Symbols</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3a6b0fb3-2377-4f96-b713-ee9d75d1ee7f">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="167a81fc-cab8-40eb-934d-d91ae0d9e440">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>has_symbols</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d49afbbc-3e58-42ed-8d29-1c00faa3dd16">
+      <ID>Sentiment Tag</ID>
+      <Name>Sentiment Tag</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9658b46a-8ed7-404e-9651-65412ca2dc58">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c3522d82-647b-4ce3-a5e0-67de0621cd48">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>sentiment_tag</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="00702f44-75f3-45d3-b47e-2a2f6f707e1e">
+      <ID>Content Type</ID>
+      <Name>Content Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41f820be-ec55-4f1b-8ffa-c93b68430354">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2aed12f-df24-4bf8-9489-bfb6b189f664">
+            <TableID>dbo_Tweet_MetaData</TableID>
+            <ColumnID>content_type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
