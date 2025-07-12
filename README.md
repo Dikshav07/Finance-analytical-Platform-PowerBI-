@@ -1,4 +1,7 @@
-# tweetsOLAPing : an end-to-end social-media data-warehousing project :
+# FinSight: A Social Media–Driven Financial Analytics Platform
+
+**An end-to-end data warehousing solution leveraging social media signals for financial intelligence and reporting.**
+
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
