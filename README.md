@@ -1,4 +1,4 @@
-# FinSight: A Social Media–Driven Financial Analytics Platform
+#  A Social Media–Driven Financial Analytics Platform
 
 **An end-to-end data warehousing solution leveraging social media signals for financial intelligence and reporting.**
 
